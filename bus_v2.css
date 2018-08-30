@@ -1,0 +1,1019 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Pontano+Sans');
+
+body{
+	margin:0;
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	font-family: "Helvetica";
+	min-height: 100vh;
+	color:#777;
+	line-height: 150%;
+}
+
+main{
+	min-height: 100vh;
+}
+
+h1, h2, h3{
+	font-family:"Nunito Sans";
+}
+
+h1{
+	font-size:2em;
+}
+
+h2{
+	font-size:1.5em;
+	margin-top:50px;
+	text-align:center;
+}
+
+h3{
+	font-size:1.2em;
+}
+
+h1, h2, h3{
+	color:black;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+}
+
+aside{
+	display:none;
+}
+
+img{
+	max-width: 100%;
+}
+
+.keyword{
+	color:#FF1908;
+}
+
+.mobile{
+	display:none;
+}
+
+.row{
+	display:flex;
+	justify-content: space-around;
+}
+
+.col{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	margin:10px;
+	padding:10px;
+}
+
+.l3{
+	width:calc(25% - 20px);
+}
+
+.l4{
+	width:calc((100%/3) - 20px);
+}
+
+.l6{
+	width:calc(50% - 20px);
+}
+
+.l12{
+	width:calc(100% - 20px);
+}
+
+/* HEADER HOME */
+
+#header_home{
+	display:flex;
+	flex-direction: column;
+	height:100vh;
+	background:url(image/cover_home.jpg) no-repeat;
+	background-size:cover;
+}
+
+#header_home > div{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	margin:auto;
+	color:white;
+}
+
+#header_home h1{
+	font-size:4em;
+	color:white;
+}
+
+#header_home > div span{
+	font-size:1.3em;
+}
+
+/* boutons home */
+#header_home a[href="#home_concept"], #home_valeurs a, #home_concept a{
+	margin-top:40px;
+	margin-bottom:40px;
+	color:white;
+	padding:10px 15px;
+	background-color:#0585c8;
+	border:1px solid white;
+	border-radius:10px;
+	font-size:1.1em;
+	transition: .2s;
+}
+
+#header_home a[href="#home_concept"]:hover, #home_valeurs a:hover, #home_concept a:hover{
+	background-color:white;
+	color:black;
+	border:1px solid black;
+	transition: .2s;
+}
+
+/* FIN HEADER HOME */
+
+/* FOOTER */
+
+footer{
+	background-color:#666;
+	color:white;
+}
+
+footer a{
+	color:white;
+}
+
+#reseaux{
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#reseaux > a > img{
+	width:50px;
+	transition-duration: 1s;
+}
+
+#reseaux > a > img:hover{
+	transform:rotate(360deg);
+}
+
+footer > div:first-child > div:hover i{
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  transition:.2s;
+}
+
+footer > div:first-child > div:first-child{
+	border-right:solid 2px white;
+}
+
+footer > div:first-child > div:last-child{
+	border-left:solid 2px white;
+}
+
+/* FIN FOOTER */
+
+
+/* DEBUT SECTIONS */
+
+/* MAIN */
+
+#home section:nth-child(odd){
+	background-color:rgb(230,230,230);
+}
+
+/* FIN MAIN */
+
+section{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#home_actu > div:nth-child(2) > div{
+	height: 25vh;
+	justify-content: center;
+}
+
+#home_actu > div:nth-child(2) > div > a{
+	color:white;
+	font-size:1.2em;
+	padding:25px 10px;
+	border:3px solid white;
+	transition:.2s;
+}
+
+#home_actu > div:nth-child(2) > div:hover > a{
+	background-color:white;
+	color:black;
+	transition:.2s;
+}
+
+#home_actu > div:nth-child(2) > div:first-child{ 
+	background:url("image/fonds.jpg") no-repeat;
+	background-size:cover;
+}
+
+#home_actu > div:nth-child(2) > div:nth-child(2){ 
+	background:url("image/home_recrutement.jpg") no-repeat;
+	background-size:cover;
+}
+
+#home_actu > div:nth-child(2) > div:last-child{ 
+	background:url("image/news.jpg") no-repeat;
+	background-size:cover;
+}
+
+/* SECTION VALEURS */
+
+#home_valeurs p{
+	text-align:center;
+}
+
+#home_valeurs img{
+	height: 100px;
+}
+
+/* FIN SECTION VALEURS */
+
+/* SECTION CONCEPT */
+
+#home_concept{
+	background:url("image/concept_2.jpg") no-repeat;
+	background-size:cover;
+}
+
+#home_concept h2{
+	color:white;
+}
+
+#home_concept img{
+	height: 30vh;
+	margin-top:20px;
+}
+
+#home_concept > div > div{
+	background-color:white;
+	padding:0;
+}
+
+.concept_entete{
+	background-color:#0585c8;
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+.concept_entete > h3{
+	color:white;
+}
+
+/* FIN SECTION CONCEPT */
+
+/* SECTION OBJECTIFS */
+
+#info_obj{
+	justify-content: center !important;
+	align-items:center !important;
+}
+
+/* FIN SECTION OBJECTIFS */
+
+/* SECTION PARTENAIRES */
+
+.logo_partenaire{
+	height:240px !important;
+	width:240px !important;
+	border-radius:50%;
+	background-color:white;
+	justify-content: center;
+	align-items: center;
+	border:2px solid transparent;
+	transition:.2s;
+}
+
+.logo_partenaire:hover{
+	border:2px solid #0585c8;
+	transition:.2s;
+}
+
+#partenaires img{
+	width:180px;
+}
+
+/* FIN SECTION PARTENAIRES */
+
+/* SECTION CONTACT */
+
+#formulaire form{
+	display:flex;
+	flex-direction: column;
+}
+
+#formulaire form > *{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#formulaire input, #formulaire textarea{
+	padding:5px;
+	border:2px solid #E6E6E6;
+	border-left:6px solid #E6E6E6;
+}
+
+#formulaire iframe{
+	width:550px;
+	height: 300px;
+	border-radius:10px 10px 0 0;
+}
+
+#formulaire input[type="submit"]{ /*Bouton du formulaire*/
+	align-self:flex-start;
+	border:solid 1px #0585c8;
+	padding:10px;
+	border-radius:5px;
+	background-color:#0585c8;
+	color:white;
+	text-transform: uppercase;
+	transition:.2s;
+}
+
+#formulaire input[type="submit"]:hover{
+	border:solid 1px black;
+	background-color:white;
+	color:black;
+	transition:.2s;
+	cursor:pointer;
+}
+
+/* FIN SECTION CONTACT */
+
+/* FIN SECTIONS MAIN */
+
+/* PAGE ACTUALITES -------------------------------------------------------------- */
+
+#header_actu{
+	height: 70vh;
+	background:url(image/actualite.jpg) no-repeat;
+	background-size:100%;
+}
+
+.article_header{
+	background-color:#0585c8; 
+	border:1px solid white;
+	/*margin-top: 20px;*/
+}
+
+.hidden{
+	display:none;
+}
+
+.blue{
+	background-color:#0585c8; 
+}
+
+.green{
+	background-color:#00ADA1;
+}
+
+.article_header:hover{
+	cursor:pointer;
+}
+
+.article_header, .article_header h3{
+	color:white;
+}
+
+.article_header > .col{
+	justify-content: center;
+}
+
+#main_actu {
+	text-align: justify;
+}
+
+#main_actu img{
+	height: 270px;
+}
+
+#main_actu .col{
+	justify-content: center;
+}
+
+/* FIN PAGE ACTUALITES -------------------------------------------------------------- */
+
+/* PAGE EQUIPE -------------------------------------------------------------- */
+
+#header_team { /* HEADER EQUIPE */
+	height: 70vh;
+	background:url(image/photos/team_bus.jpg) no-repeat;
+	background-size:100%;
+}
+
+#equipe_bus h3{
+	margin-top:0;
+}
+
+#johanne {
+	background: url(image/photos/johanne_01.jpg) no-repeat center;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#johanne:hover {
+	background: url(image/photos/johanne_02.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+
+#loa {
+	background: url(image/photos/loa_01.jpg) no-repeat center;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#loa:hover {
+	background: url(image/photos/loa_02.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+#jacques {
+	background: url(image/photos/jacques_01.jpg) no-repeat center;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#jacques:hover {
+	background: url(image/photos/jacques_02.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+#valentin {
+	background: url(image/photos/valentin_01.jpg) no-repeat center;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#valentin:hover {
+	background: url(image/photos/valentin_02.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+#i1, #i2, #i3, #i4{
+	position:absolute;
+}
+
+.photo{
+	border-radius:50%;
+	height: 200px;
+	width:200px;
+}
+
+#equipe_bus > div > div:first-child:hover #i1, #equipe_bus > div > div:first-child:hover #i2, #equipe_bus > div > div:first-child:hover #i3, #equipe_bus > div > div:first-child:hover #i4{
+	display:none;
+}
+
+.equipe_reseaux img{
+	height: 30px;
+	margin:10px;
+}
+
+.team_row:nth-child(even){
+	display:flex;
+	flex-direction: row-reverse;
+}
+
+/* FIN PAGE EQUIPE -------------------------------------------------------------- */
+
+/* PAGE VALEURS -------------------------------------------------------------- */
+
+#header_valeurs{
+	height: 70vh;
+	background:url(image/valeurs.jpg) no-repeat;
+	background-size:100%;
+}
+
+#info_valeurs{
+	margin-bottom:50px;
+}
+
+#info_valeurs img{
+	height: 300px;
+}
+
+
+#v1{color:#0D70BF;}  #v2{color:#FF1908;} #v3{color:#00ADA1;} #v4{color:#A08578;}
+#obj1{color:#FF1908;} #obj2{color:#00ADA1;} #obj3{color:#0D70BF;} #obj4{color:#A08578;}
+#obj1,#obj2,#obj3,#obj4 {text-align: center;}
+
+/* FIN PAGE VALEURS -------------------------------------------------------------- */
+
+/* PAGE PEDAGOGIE -------------------------------------------------------------- */
+
+#header_pedagogie{
+	height: 70vh;
+	background:url(image/cover_2.jpg) no-repeat;
+	background-size:100%;
+}
+
+#main_pedagogie img{
+	width:45vw;
+}
+
+#main_pedagogie .col{
+	justify-content: space-around;
+}
+
+#pedagogie_reverse{
+	flex-direction: row-reverse;
+}
+
+/* FIN PAGE PEDAGOGIE -------------------------------------------------------------- */
+
+/* ---------------------------------- INCLUDES ------------------------------ */
+
+/*NAV*/
+
+nav{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	background-color:#0585c8;
+	height: 70px;
+	opacity: 0.9;
+}
+
+nav > div:first-child{
+	flex:3;
+}
+
+nav > div:last-child{
+	flex:9;
+}
+
+nav ul{
+	display:flex;
+	justify-content: space-around;
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+nav ul li{
+	text-transform:uppercase;
+	font-size:0.9em;
+}
+
+nav ul a{
+	color:white;
+	padding-bottom:5px;
+	border-bottom:2px solid transparent;
+	transition: .2s;
+}
+
+nav ul a:hover{
+	border-bottom:2px solid white;
+	transition: .2s;
+}
+
+nav img{
+	padding-left:20px;
+	height: 50px;
+}
+
+aside{
+	position:fixed;
+	top:0;
+	left:-200px;
+	width:200px;
+	height: 100vh;
+	background-color:#0585c8;
+	z-index:999;
+}
+
+aside ul{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	width:100%;
+	height: 80%;
+}
+
+aside ul li{
+	text-transform: uppercase;
+	font-size:0.9em;
+	width:100%;
+	text-align: center;
+}
+
+aside ul li a{
+	color:white;
+	text-decoration: none;
+	padding:10px 0px;
+	border-bottom:2px solid transparent;
+	transition: .2s;
+}
+
+aside ul li a:hover{
+	border-bottom:2px solid white;
+	transition:.2s;
+}
+
+.opacity {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	z-index: 500;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#click input{
+	padding:10px;
+	border-radius:10px;
+	border:1px solid #0585c8;
+}
+
+#click input[type="submit"]{
+	border:solid 1px #0585c8;
+	padding:10px;
+	border-radius:5px;
+	background-color:#0585c8;
+	color:white;
+	text-transform: uppercase;
+	transition:.2s;
+}
+
+#click input[type="submit"]:hover{
+	border:solid 1px black;
+	background-color:white;
+	color:black;
+	transition:.2s;
+	cursor:pointer;
+}
+
+/* ************** PAGE PARTENAIRE ************* */
+
+#header_partenaire {
+	display:flex;
+	flex-direction: column;
+	height: 70vh;
+	background:url(image/partenaire.jpg) no-repeat;
+	background-size:cover;
+}
+
+#form_partenaire {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.form_text {
+	margin: 20px;
+}
+
+#select > input {
+	width: 350px;
+	padding:5px;
+	font-size:15px;
+	border-width:0px;
+	border-radius:5px;
+	background-color:#dddddd; 
+}
+
+#valider {
+	background-color:#0585c8;
+	border-radius:6px;
+	cursor:pointer;
+	color:white;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 30px;
+	border: 2px solid #0585c8;
+	transition: 0.3s;
+}
+
+#valider:hover {
+	background-color: white;
+	color: black;
+	transition: 0.3s;
+	border: 2px solid black;
+}
+
+/* *********** PAGE RECRUTEMENT ********* */
+
+#header_recrutement {
+	display:flex;
+	flex-direction: column;
+	height: 70vh;
+	background:url(image/recrutement.jpg) no-repeat;
+	background-size:cover;
+}
+
+.recrutement {
+	text-align: center;
+}
+
+.hr {
+	margin: 50px;
+	width: 50%;
+	height: 2px;
+	background-color: #0585c8;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 60%;
+	padding: 30px;
+	margin: 10px;
+}
+
+.block > div:first-child {
+	width: 50%;
+}
+
+.block > div:last-child {
+	margin-left: 50px;
+}
+
+/* ******** PAGE PLAN DU SITE *********** */
+
+#header_plan {
+	display:flex;
+	flex-direction: column;
+	height: 70vh;
+	background:url(image/plan.jpg) no-repeat;
+	background-size:cover;
+}
+
+.plan_list {
+	font-size: 1.9em;
+}
+
+.plan_list #hr {
+	width: 110%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.plan_list ul {
+	list-style-type: none;
+	line-height:200%;
+}
+
+/* **************** PAGE MENTIONS LEGALES ************* */
+
+#header_mention {
+	display:flex;
+	flex-direction: column;
+	height: 70vh;
+	background:url(image/mention.jpg) no-repeat;
+	background-size:cover;
+}
+.mention_list {
+	align-items: flex-start;
+}
+
+.mention_list > ul {
+	list-style-type: none;
+	
+}
+
+/* PAGE CONNEXION --------------------------------------- */
+
+#main_log{
+	width:50%;
+	align-self:center;
+}
+
+#main_log fieldset, #main_art fieldset{
+	border:2px solid #0585c8;
+	border-radius:10px;
+	text-align:center;
+}
+
+#main_log legend, #main_art fieldset{
+	padding:10px;
+	font-size:1.5em;
+}
+
+#main_log label, #main_art label{
+	padding:10px;
+}
+
+#main_log input, #main_art input{
+	padding:10px;
+	border-radius:10px;
+	border:1px solid #0585c8;
+}
+
+#main_log input[type="submit"], #main_art input[type="submit"]{
+	border:solid 1px #0585c8;
+	padding:10px;
+	border-radius:5px;
+	background-color:#0585c8;
+	color:white;
+	text-transform: uppercase;
+	transition:.2s;
+	margin-bottom:30px;
+}
+
+#main_log input[type="submit"]:hover, #main_art input[type="submit"]:hover{
+	border:solid 1px black;
+	background-color:white;
+	color:black;
+	transition:.2s;
+	cursor:pointer;
+}
+
+.error_msg{
+	color:red;
+	font-size:1.2em;
+	text-align:center;
+}
+
+/* FIN PAGE CONNEXION--------------------------------------- */
+
+/* FORMAT TABLETTE */
+
+@media screen and (max-width:1024px){
+	/* HEADER */
+	header{
+		display:none !important;
+	}
+
+	.mobile{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		background-color:#0585c8;
+		color:white;
+		height: 80px;
+	 	padding-left:10px;
+	}
+
+	.mobile i{
+		font-size:60px;
+	}
+
+	.mobile i:hover{
+		cursor:pointer;
+	}
+	/* FIN DE HEADER */
+
+	aside{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.row{
+		flex-wrap:wrap;
+	}
+
+	.m4{
+		width:calc((100%/3) - 20px);
+	}
+
+	.m6{
+		width:calc(50% - 20px);
+	}
+
+	.m12{
+		width:calc(100% - 20px);
+	}
+
+	/* PAGE VALEURS --------------------------------------- */
+
+	#info_valeurs img{
+		height: 200px;
+	}
+
+	/* FIN PAGE VALEURS --------------------------------------- */
+
+	/* PAGE PEDAGOGIE -------------------------------------- */
+
+	#main_pedagogie img{
+	width:80vw;
+	}
+
+	/* FIN PAGE PEDAGOGIE -------------------------------------- */
+
+	/* PAGE CONNEXION --------------------------------------- */
+
+	#main_log{
+		width:80%;
+	}
+
+	/* FIN PAGE CONNEXION--------------------------------------- */
+
+	#info_obj{
+		display:none;
+	}
+
+	footer > div:first-child > div:first-child, footer > div:first-child > div:last-child{
+		border:none;
+	}
+}
+
+/* FORMAT MOBILE */
+
+@media screen and (max-width:600px){
+	/* HEADER */
+	header{
+		display:none !important;
+	}
+
+	#formulaire iframe{
+	width:350px;
+	height: 300px;
+	border-radius:10px 10px 0 0;
+	}
+
+	.mobile{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		background-color:#0585c8;
+		color:white;
+		height: 80px;
+	 	padding-left:10px;
+	}
+
+	.mobile i{
+		font-size:60px;
+	}
+
+	.mobile i:hover{
+		cursor:pointer;
+	}
+	/* FIN DE HEADER */
+
+	aside{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.row{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.s12{
+		width:calc(100% - 20px);
+	}
+
+	/* PAGE VALEURS --------------------------------------- */
+
+	#info_valeurs{
+		display:none;
+	}
+
+	#main_valeurs .col{
+		width:100%;
+	}
+
+	/* FIN PAGE VALEURS --------------------------------------- */
+
+	#main_pedagogie img{
+	width:80vw;
+	}
+
+	/* PAGE CONNEXION --------------------------------------- */
+
+	#main_log{
+		width:100%;
+	}
+
+	.log, .news, #info_obj{
+		display:none;
+	}
+
+
+	/* FIN PAGE CONNEXION--------------------------------------- */
+
+	footer > div:first-child > div:first-child, footer > div:first-child > div:last-child{
+	border:none;
+	}
+}
